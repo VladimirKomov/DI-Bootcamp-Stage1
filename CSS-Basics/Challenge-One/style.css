@@ -1,0 +1,11 @@
+body {
+    background-color:#55ccff;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+ul {
+    text-align: center;
+    list-style: none;
+}
+li::first-letter {
+    font-size: 1.5em;
+}
