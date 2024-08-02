@@ -1,0 +1,152 @@
+@media (min-width: 993px) {
+  nav {
+    background: url(img/main_left.jpg);
+  }
+  section {
+    margin: 0px 100px 0px 100px;
+  }
+}
+
+/* For medium screens (up to 992px wide) background picture, looking to the rigtt */
+@media (max-width: 992px) {
+  nav {
+    background: url(img/main_right.jpg);
+  }
+
+  /* Reduced height on medium screens */
+  .parallax-container {
+    height: 300px;
+  }
+  section {
+    margin: 0px 50px 0px 50px;
+  }
+}
+
+/* Reduced height on small screens */
+@media (max-width: 768px) {
+  .parallax-container {
+    height: 200px;
+  }
+  section {
+    margin: 0px 25px 0px 25px;
+  }
+}
+
+body {
+  /* Path to image */
+  background-image: url(img/back-ground.jpg);
+  /* Scaling the image to fit the screen */
+  background-size: cover;
+  /* No image repetition */
+  background-repeat: no-repeat;
+  /* Background is fixed */
+  background-attachment: fixed;
+  /* Centering */
+  background-position: center;
+  /* font for text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* background picture, looking to the left */
+nav {
+  /* background: url(img/main_left.jpg); */
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+}
+
+.extra-bold {
+  font-weight: 775;
+  color: black;
+}
+
+.white-shadow {
+  text-shadow: 3px 3px 8px hsl(0, 0%, 100%);
+}
+
+/* side panel size */
+#slide-out.sidenav {
+  background-color: rgba(178, 178, 178, 0.7);
+  width: 160px;
+}
+
+/* side panel font-weight */
+#slide-out.sidenav a {
+  font-weight: 750;
+}
+
+section blockquote {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 40%;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.quote {
+  font-size: 1.5em;
+  line-height: 1.4;
+  font-style: italic;
+  color: #555;
+  position: relative;
+  padding-left: 15px;
+}
+
+q::before {
+  /* opening quote */
+  content: "“";
+  font-size: 2em;
+  color: #838383;
+  position: absolute;
+  /* left offset */
+  left: -3px;
+  /* upward offset */
+  top: -10px;
+}
+
+q::after {
+  /* closing quote */
+  content: "”";
+  font-size: 2em;
+  color: #838383;
+  position: absolute;
+  /* downward offset */
+  bottom: -20px;
+}
+
+.author {
+  /* right align */
+  text-align: right;
+  font-size: 1.2em;
+  color: #777;
+  margin-top: -25px;
+}
+
+.highlighted-title {
+  /* Gradient background */
+  background: linear-gradient(to right, #000000, #7c7c7c);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 10px 0;
+  /* Padding */
+  display: inline-block;
+}
+
+.parallax-container {
+  margin-top: 20px;
+}
+
+.custom-link {
+  font-size: 1.5em;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.card-movie .card-content {
+  height: 120px;
+  overflow: auto;
+}
