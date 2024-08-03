@@ -648,7 +648,15 @@
 
         // Initializing side navigation
         var sidenavElems = document.querySelectorAll(".sidenav");
-        M.Sidenav.init(sidenavElems);
+        var sidenavInstances = M.Sidenav.init(sidenavElems);
+
+        var menuItems = document.querySelectorAll(".sidenav a");
+        menuItems.forEach(function (menuItem) {
+          menuItem.addEventListener("click", function () {
+            var sidenavInstance = M.Sidenav.getInstance(sidenavElems[0]);
+            sidenavInstance.close();
+          });
+        });
 
         // Initializing materialboxed
         var materialboxedElems = document.querySelectorAll(".materialboxed");
