@@ -5,6 +5,9 @@
   section {
     margin: 0px 100px 0px 100px;
   }
+  .end-40 {
+    max-width: 40%;
+  }
 }
 
 /* For medium screens (up to 992px wide) background picture, looking to the rigtt */
@@ -20,6 +23,9 @@
   section {
     margin: 0px 50px 0px 50px;
   }
+  .end-40 {
+    max-width: 50%;
+  }
 }
 
 /* Reduced height on small screens */
@@ -29,6 +35,9 @@
   }
   section {
     margin: 0px 25px 0px 25px;
+  }
+  .end-40 {
+    max-width: 70%;
   }
 }
 
@@ -51,7 +60,6 @@ body {
 
 /* background picture, looking to the left */
 nav {
-  /* background: url(img/main_left.jpg); */
   background-size: cover;
   background-position: center;
   min-height: 600px;
@@ -80,7 +88,6 @@ nav {
 .end-40 {
   display: flex;
   justify-content: flex-end;
-  max-width: 40%;
   width: fit-content;
   margin-left: auto;
 }
@@ -91,6 +98,18 @@ nav {
 
 .responsive-img:hover {
   transform: scale(1.5);
+  /* Setting a high z-index */
+  z-index: 1000;
+}
+
+.card-image img {
+  transition: all 1s;
+  /* Setting a high z-index */
+  z-index: 1000;
+}
+
+.card-image img:hover {
+  transform: scale(1.2);
 }
 
 .quote {
