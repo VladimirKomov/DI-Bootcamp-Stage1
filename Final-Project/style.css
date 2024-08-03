@@ -85,6 +85,14 @@ nav {
   margin-left: auto;
 }
 
+.responsive-img {
+  transition:all 0.5s;
+}
+
+.responsive-img:hover {
+  transform: scale(1.5);
+}
+
 
 
 .quote {
