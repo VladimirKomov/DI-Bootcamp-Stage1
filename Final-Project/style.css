@@ -1,6 +1,7 @@
 @media (min-width: 993px) {
-  nav {
+  .main-picture {
     background: url(img/main_left.jpg);
+    min-height: 550px;
   }
   section {
     margin: 0px 100px 0px 100px;
@@ -12,8 +13,9 @@
 
 /* For medium screens (up to 992px wide) background picture, looking to the rigtt */
 @media (max-width: 992px) {
-  nav {
+  .main-picture {
     background: url(img/main_right.jpg);
+    min-height: 500px;
   }
 
   /* Reduced height on medium screens */
@@ -30,6 +32,9 @@
 
 /* Reduced height on small screens */
 @media (max-width: 768px) {
+  .main-picture {
+    min-height: 450px;
+  }
   .parallax-container {
     height: 200px;
   }
@@ -62,7 +67,7 @@ body {
 nav {
   background-color: rgba(255, 255, 255, 0.5);
   background-repeat: no-repeat;
-  height: 50px;
+  height: 60px;
   position: fixed;
   top: 0;
   left: 0;
@@ -73,7 +78,7 @@ nav {
 .main-picture {
   background-size: cover;
   background-position: center;
-  min-height: 600px;
+  margin: 0px;
 }
 
 .extra-bold {
@@ -110,13 +115,13 @@ nav {
 .responsive-img:hover {
   transform: scale(1.5);
   /* Setting a high z-index */
-  z-index: 1000;
+  z-index: 1;
 }
 
 .card-image img {
   transition: all 1s;
   /* Setting a high z-index */
-  z-index: 1000;
+  z-index: 1;
 }
 
 .card-image img:hover {
