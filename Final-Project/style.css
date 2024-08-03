@@ -77,13 +77,15 @@ nav {
   font-weight: 750;
 }
 
-section blockquote {
+.end-40 {
   display: flex;
   justify-content: flex-end;
   max-width: 40%;
   width: fit-content;
   margin-left: auto;
 }
+
+
 
 .quote {
   font-size: 1.5em;
